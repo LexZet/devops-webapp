@@ -94,19 +94,7 @@ public class DockerServlet extends HttpServlet {
             response.getWriter().println("action->1");
             response.getWriter().println(containerId);
             response.getWriter().println(containerIp);
-            break;
-        case "/action2":
-            logger.debug("action 2 called...");
-            response.getWriter().println("action->2");
-            response.getWriter().println(containerId);
-            response.getWriter().println(containerIp);
-            break;
-        case "/action3":
-            logger.debug("action 3 called... me");
-            response.getWriter().println("action->3");
-            response.getWriter().println(containerId);
-            response.getWriter().println(containerIp);
-            break;         
+            break;    
         }
     }
 }
